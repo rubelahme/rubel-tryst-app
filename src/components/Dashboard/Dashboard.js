@@ -36,7 +36,7 @@ const Dashboard = () => {
                 <td>{data.Email}</td>
                 <td>{data.Password}</td>
                 <td
-                  className="btn btn-success "
+                  className="btn btn-success d-none"
                   onClick={() => handleDelete(data._id)}
                 >
                   Delate
