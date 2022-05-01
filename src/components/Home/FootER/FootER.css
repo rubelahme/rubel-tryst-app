@@ -1,0 +1,21 @@
+.Assembly {
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+.footerArea {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #1b1f29;
+  border-bottom: 4px solid #cf1e30;
+}
+.Generated {
+  padding-top: 20px;
+  color: rgba(255, 255, 255, 0.205);
+  font-size: 10px;
+  opacity: 0.9;
+}

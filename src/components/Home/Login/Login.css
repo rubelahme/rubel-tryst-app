@@ -1,0 +1,51 @@
+.imgPic {
+  width: 150px;
+  height: 55px;
+}
+.Provider1 {
+  margin-top: 5px;
+  width: 200px;
+  padding: 15px;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 50px;
+  border: none;
+  line-height: 36px;
+  font-size: 24px;
+  background-color: #f74356;
+  margin-bottom: 1em;
+}
+.Provider1:hover {
+  background-color: #cf1e30;
+}
+.Email {
+  margin-top: 30px;
+}
+.Forgot {
+  border: 2px solid #cf1e30;
+  height: 40px;
+  width: 240px;
+  font-size: 15px;
+  border-radius: 50px;
+  color: #f74356;
+  font-weight: 700;
+  background-color: #fff;
+}
+.Forgot:hover {
+  background-color: #f74356;
+  color: #fff;
+}
+.receive {
+  border: 2px solid #f74356;
+  height: 40px;
+  width: 300px;
+  font-size: 15px;
+  border-radius: 50px;
+  color: #f74356;
+  font-weight: 700;
+  background-color: #fff;
+}
+.receive:hover {
+  background-color: #f74356;
+  color: #fff;
+}

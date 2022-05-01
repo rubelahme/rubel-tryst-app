@@ -1,0 +1,46 @@
+.Nav1,
+.Nav2,
+.Nav3 {
+  color: #eee !important;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 0 25px !important;
+  line-height: 50px;
+  margin: 0;
+  cursor: pointer;
+  list-style: none;
+}
+.img1 {
+  width: 150px;
+  height: 70px;
+}
+.NavCl {
+  background-color: #1b1f29;
+  padding: 0;
+  margin: 0;
+}
+.Bar {
+  font-size: 24px;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+.Nav1:hover,
+.Nav2:hover,
+.Nav3:hover {
+  border-bottom: 3px solid #d7282f;
+}
+.deets {
+  display: none !important;
+}
+.deet {
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  .deet {
+    display: block !important;
+  }
+}

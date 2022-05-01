@@ -1,0 +1,86 @@
+.verifieds {
+  font-size: 17px;
+  font-weight: 800;
+  color: #2030c7;
+  margin-bottom: 0;
+}
+.identity {
+  font-size: 17px;
+  font-weight: 300;
+  color: #4e8aff;
+  margin-bottom: 0;
+}
+.img1 {
+  height: 100px !important;
+  margin-bottom: 10px;
+}
+.LoginData {
+  width: 50%;
+  border-radius: 30px !important;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 136, 0),
+    rgb(170, 77, 77)
+  );
+  border: none !important;
+}
+.DefaultFile {
+  width: 50%;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.Processing:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.UploadData {
+  font-weight: 500;
+  font-size: medium;
+}
+.RememberId {
+  border: 1px solid red !important;
+}
+.RememberId:checked {
+  background-color: rgb(6, 135, 240) !important;
+  border: none !important;
+}
+@media only screen and (max-width: 992px) {
+  .DefaultFile {
+    width: 90%;
+  }
+  .LoginData {
+    width: 90%;
+  }
+  .UploadData {
+    font-size: small;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .DefaultFile {
+    width: 100%;
+  }
+  .LoginData {
+    width: 100%;
+  }
+  .verifieds {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .identity {
+    font-size: 13px;
+    font-weight: 300;
+  }
+  .UploadData {
+    font-size: small;
+  }
+}
