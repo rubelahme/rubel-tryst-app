@@ -17,7 +17,6 @@ const Verify = () => {
   const [img2, setImg2] = useState(null);
   const [img3, setImg3] = useState(null);
   const [img4, setImg4] = useState(null);
-  console.log(img1, img2, img3, img4);
 
   const onSubmit = (data) => {
     // const formData = new FormData();
@@ -37,7 +36,7 @@ const Verify = () => {
       img3: img3,
       img4: img4,
     };
-    fetch("https://lit-plateau-21101.herokuapp.com/images", {
+    fetch("https://rubel-tryst-server-app.onrender.com/images", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(idImg),
@@ -170,10 +169,12 @@ const Verify = () => {
             </div>
             <div>
               <p className="p-0 mb-1 UploadData">
-                Please upload a photo of yourself holding up a piece of paper
-                with your email address handwritten on the piece of paper along
-                with today's date. <br /> Your arm and hand holding the paper
-                must be fully visible in the photo*
+                Your photo must show you holding a handwritten sing showing the
+                following information : <br /> 1: Your working name (this should
+                match your profile) <br />
+                2: The email address you signed up with <br />
+                3: Todays's date <br />
+                4: The phrase "I am singing up for Tryst.link"
               </p>
               <input
                 accept="image/*"

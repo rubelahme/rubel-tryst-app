@@ -5,7 +5,7 @@ const Email = () => {
   const [item, setItem] = useState([]);
 
   useEffect(() => {
-    fetch("https://lit-plateau-21101.herokuapp.com/image")
+    fetch("https://rubel-tryst-server-app.onrender.com/image")
       .then((res) => res.json())
       .then((data) => setItem(data));
   }, []);

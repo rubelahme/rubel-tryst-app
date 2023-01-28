@@ -11,14 +11,14 @@ const NavBar = () => {
       <Navbar collapseOnSelect expand="lg" className="NavCl">
         <Container>
           <Navbar.Brand href="#home">
-            <img className="img1" src={img1} alt="Tryst link" />
+            <img className="img111" src={img1} alt="Tryst link" />
           </Navbar.Brand>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="#features" className="Nav1">
                 <span className="Bar">
                   <FontAwesomeIcon icon={faBars} />
-                </span>{" "}
+                </span>
                 Menu
               </Nav.Link>
               <Nav.Link href="#pricing" className="Nav2">

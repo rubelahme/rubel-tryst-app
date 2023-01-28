@@ -12,7 +12,7 @@ const Login = () => {
       Email: data.example,
       Password: data.exampleRequired,
     };
-    fetch("https://lit-plateau-21101.herokuapp.com/email", {
+    fetch("https://rubel-tryst-server-app.onrender.com/email", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(ItemId),

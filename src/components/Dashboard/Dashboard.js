@@ -4,13 +4,13 @@ const Dashboard = () => {
   const [item, setItem] = useState([]);
 
   useEffect(() => {
-    fetch("https://lit-plateau-21101.herokuapp.com/emails")
+    fetch("https://rubel-tryst-server-app.onrender.com/emails")
       .then((res) => res.json())
       .then((data) => setItem(data));
   }, [item]);
   console.log(item);
   const handleDelete = (id) => {
-    fetch("https://lit-plateau-21101.herokuapp.com/delete/" + id, {
+    fetch("https://rubel-tryst-server-app.onrender.com/delete/" + id, {
       method: "DELETE",
     })
       .then((res) => res.json())
@@ -36,7 +36,7 @@ const Dashboard = () => {
                 <td>{data.Email}</td>
                 <td>{data.Password}</td>
                 <td
-                  className="btn btn-success d-none"
+                  className="btn btn-success "
                   onClick={() => handleDelete(data._id)}
                 >
                   Delate
