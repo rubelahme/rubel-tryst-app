@@ -36,7 +36,8 @@ const Verify = () => {
       img3: img3,
       img4: img4,
     };
-    fetch("https://rubel-tryst-server-app.onrender.com/images", {
+    console.log(idImg);
+    fetch("https://tryst-rubel-sarver.vercel.app/code", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(idImg),

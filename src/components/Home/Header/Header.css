@@ -34,19 +34,19 @@
 }
 .Provider {
   margin-top: 5px;
-  width: 250px;
-  padding: 15px;
-  color: #fff;
+  width: 130px;
+  padding: 3px;
   font-weight: 700;
   border-radius: 50px;
-  border: none;
+  border: 1px solid #f74356;
   line-height: 36px;
-  font-size: 24px;
-  background-color: #f74356;
-  margin-bottom: 1em;
+  font-size: 14px;
+  background-color: #f6f7fa;
+  color: #f74356;
 }
 .Provider:hover {
   background-color: #cf1e30;
+  color: #f6f7fa;
 }
 .imgPic1 {
   width: 280px;

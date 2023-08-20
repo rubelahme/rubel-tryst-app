@@ -4,8 +4,8 @@
   color: #eee !important;
   font-weight: 400;
   font-size: 20px;
-  padding: 0 25px !important;
-  line-height: 50px;
+  padding: 0 10px !important;
+  line-height: 20px;
   margin: 0;
   cursor: pointer;
   list-style: none;
@@ -28,7 +28,7 @@
 .Nav1:hover,
 .Nav2:hover,
 .Nav3:hover {
-  border-bottom: 3px solid #d7282f;
+  border-bottom: 1px solid #f8f7f7;
 }
 .deets {
   display: none !important;
@@ -42,5 +42,11 @@
 @media only screen and (max-width: 992px) {
   .deet {
     display: block !important;
+  }
+  .Search {
+    display: none;
+  }
+  .Nav2 {
+    font-size: 15px;
   }
 }

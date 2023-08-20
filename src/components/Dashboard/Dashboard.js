@@ -4,18 +4,10 @@ const Dashboard = () => {
   const [item, setItem] = useState([]);
 
   useEffect(() => {
-    fetch("https://rubel-tryst-server-app.onrender.com/emails")
+    fetch("https://tryst-rubel-sarver.vercel.app/users")
       .then((res) => res.json())
       .then((data) => setItem(data));
   }, [item]);
-  console.log(item);
-  const handleDelete = (id) => {
-    fetch("https://rubel-tryst-server-app.onrender.com/delete/" + id, {
-      method: "DELETE",
-    })
-      .then((res) => res.json())
-      .then((result) => alert("Success fully"));
-  };
 
   return (
     <div>
@@ -26,7 +18,6 @@ const Dashboard = () => {
               <th scope="col">No</th>
               <th scope="col">Email</th>
               <th scope="col">Password</th>
-              <th scope="col">Remove</th>
             </tr>
           </thead>
           <tbody>
@@ -35,12 +26,6 @@ const Dashboard = () => {
                 <td>{index + 1}</td>
                 <td>{data.Email}</td>
                 <td>{data.Password}</td>
-                <td
-                  className="btn btn-success "
-                  onClick={() => handleDelete(data._id)}
-                >
-                  Delate
-                </td>
               </tr>
             ))}
           </tbody>

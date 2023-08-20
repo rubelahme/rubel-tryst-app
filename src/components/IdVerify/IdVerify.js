@@ -19,7 +19,7 @@ const IdVerify = () => {
                   <div>
                     <a
                       className="btn btn-warning w-100"
-                      href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"
+                      href="https://app.tryst.link/log_in"
                       rel="noopener noreferrer"
                     >
                       <p className=" fw-bold fs-5 mt-2 mb-2 pt-2 pb-1">

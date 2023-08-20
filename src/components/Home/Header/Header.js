@@ -1,7 +1,6 @@
 import React from "react";
 import Login from "../Login/Login";
 import "./Header.css";
-import img3 from "../../Img/Captureq.PNG";
 
 const Header = () => {
   return (
@@ -15,25 +14,19 @@ const Header = () => {
             <div className="col-md-6">
               <span className="sing">Sign</span>
               <span className="up"> up</span>
-              <p className="NEW">NEW: We are now accepting client sign ups!</p>
-              <p className="NEW1">
+              <p className="NEW">
                 Tryst.link is one of the fastest-growing escort platforms in the
                 world. Built by the same team behind Switter!
               </p>
               <p className="NEW2">
                 Please select which type of account you'd like to sign up for:
               </p>
-              <div className="text-center">
+              <div>
                 <button className="Provider">I am a Provider</button>
-                <div>
-                  <button className="Provider">I am a Client</button>
-                </div>
+                <span>
+                  <button className="Provider ms-2">I am a Client</button>
+                </span>
               </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-12 mb-4">
-              <img className="imgPic1" src={img3} alt="" />
             </div>
           </div>
         </div>

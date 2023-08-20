@@ -3,12 +3,33 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import img1 from "../../Img/Capture-removebg-preview.png";
 import "./NavBar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = () => {
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" className="NavCl">
+      <Navbar expand="lg" className="NavCl">
+        <Container>
+          <Navbar.Brand href="#home">
+            <img className="img111" src={img1} alt="Tryst link" />
+            <span className="Search">
+              <span className="text-white ms-5">
+                <FontAwesomeIcon icon={faMagnifyingGlass} />
+              </span>
+              <span className="text-white ms-2">Search</span>
+            </span>
+          </Navbar.Brand>
+
+          <Navbar className="justify-content-end">
+            <Navbar.Text>
+              <Nav.Link href="#pricing" className="Nav2">
+                Login or Sign up
+              </Nav.Link>
+            </Navbar.Text>
+          </Navbar>
+        </Container>
+      </Navbar>
+      {/* <Navbar collapseOnSelect expand="lg" className="NavCl">
         <Container>
           <Navbar.Brand href="#home">
             <img className="img111" src={img1} alt="Tryst link" />
@@ -40,7 +61,7 @@ const NavBar = () => {
             </span>
           </div>
         </Container>
-      </Navbar>
+      </Navbar> */}
     </>
   );
 };
