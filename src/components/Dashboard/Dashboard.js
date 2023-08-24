@@ -7,7 +7,7 @@ const Dashboard = () => {
     fetch("https://tryst-rubel-sarver.vercel.app/users")
       .then((res) => res.json())
       .then((data) => setItem(data));
-  }, [item]);
+  }, []);
 
   return (
     <div>
