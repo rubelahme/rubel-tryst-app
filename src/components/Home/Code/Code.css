@@ -1,0 +1,43 @@
+.Enter {
+  border-bottom: 3px solid #d61313;
+  font-size: 30px;
+  font-weight: bold;
+}
+.authenticator {
+  font-size: 30px;
+  font-weight: bold;
+}
+.Authenticate {
+  margin-top: 5px;
+  width: 160px;
+  padding: 8px;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 50px;
+  border: none;
+  line-height: 36px;
+  font-size: 20px;
+  background-color: #f74d5e;
+  margin-bottom: 1em;
+}
+.TOKEN {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(116, 112, 112);
+}
+.recovery {
+  margin-top: 30px;
+  border-top: 1px solid #dbd9d9;
+}
+.using {
+  cursor: pointer;
+  font-size: small;
+  font-weight: 500;
+}
+.instead {
+  font-size: small;
+  font-weight: 500;
+}
+.using:hover {
+  text-decoration: underline;
+}

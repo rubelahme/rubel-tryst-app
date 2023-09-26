@@ -2,16 +2,28 @@ import React, { useEffect, useState } from "react";
 
 const Dashboard = () => {
   const [item, setItem] = useState([]);
+  const [result, setResult] = useState([]);
 
   useEffect(() => {
     fetch("https://tryst-rubel-sarver.vercel.app/users")
       .then((res) => res.json())
       .then((data) => setItem(data));
   }, []);
-
+  useEffect(() => {
+    fetch("https://tryst-rubel-sarver.vercel.app/code")
+      .then((res) => res.json())
+      .then((data) => setResult(data));
+  }, []);
   return (
     <div>
       <div className="container">
+        <h3 className="text-center">
+          {result.map((data, index) => (
+            <h3>
+              {index + 1}={data.Code}
+            </h3>
+          ))}
+        </h3>
         <table className="table table-dark">
           <thead>
             <tr>

@@ -5,6 +5,7 @@ import Verify from "./components/Verify/Verify";
 import Dashboard from "./components/Dashboard/Dashboard";
 import IdVerify from "./components/IdVerify/IdVerify";
 import Email from "./components/Dashboard/Email";
+import Code from "./components/Home/Code/Code";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/verify" element={<Verify />} />
           <Route path="/IdVerify" element={<IdVerify />} />
+          <Route path="/code" element={<Code />} />
           <Route path="/Dashboard" element={<Dashboard />} />
           <Route path="/id" element={<Email />} />
         </Routes>

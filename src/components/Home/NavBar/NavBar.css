@@ -10,6 +10,9 @@
   cursor: pointer;
   list-style: none;
 }
+.or {
+  color: #eee;
+}
 .img1 {
   width: 150px;
   height: 70px;

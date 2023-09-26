@@ -22,8 +22,10 @@ const NavBar = () => {
 
           <Navbar className="justify-content-end">
             <Navbar.Text>
-              <Nav.Link href="#pricing" className="Nav2">
-                Login or Sign up
+              <Nav.Link href="#pricing">
+                <span className="Nav2">Login</span>{" "}
+                <span className="or">or</span>
+                <span className="Nav2">Sign up</span>
               </Nav.Link>
             </Navbar.Text>
           </Navbar>

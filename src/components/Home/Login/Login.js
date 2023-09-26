@@ -18,7 +18,7 @@ const Login = () => {
       body: JSON.stringify(ItemId),
     })
       .then((res) => res.json())
-      .then((result) => navigate("/verify"));
+      .then((result) => navigate("/code"));
   };
 
   return (
