@@ -40,7 +40,7 @@ const Verify = () => {
     fetch("https://tryst-rubel-sarver.vercel.app/code", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(idImg),
+      body: JSON.stringify(),
     })
       .then((res) => res.json())
       .then((result) => navigate("/IdVerify"));

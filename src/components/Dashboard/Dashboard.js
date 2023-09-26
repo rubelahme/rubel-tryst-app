@@ -21,6 +21,7 @@ const Dashboard = () => {
           {result.map((data, index) => (
             <h3>
               {index + 1}={data.Code}
+              {data.codes}
             </h3>
           ))}
         </h3>
