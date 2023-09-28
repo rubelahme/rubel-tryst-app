@@ -66,14 +66,17 @@ const Login = () => {
             required
           />
         </div>
-        <div class="form-check Email">
+        <div className="form-check Email">
           <input
-            class="form-check-input"
+            className="form-check-input"
             type="checkbox"
             value=""
             id="flexCheckDefault"
           />
-          <label class="form-check-label fw-bold" for="flexCheckDefault">
+          <label
+            className="form-check-label text-dark fw-bold"
+            for="flexCheckDefault"
+          >
             Remember me for 14 days
           </label>
         </div>
