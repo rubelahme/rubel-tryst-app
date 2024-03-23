@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 
 const CodeDetails = () => {
-  const [user, setUser] = useState(true);
+  const [user, setUser] = useState(false);
   const [show, setShow] = useState(true);
   const navigate = useNavigate();
 
@@ -131,8 +131,8 @@ const CodeDetails = () => {
                   Authenticate using emergency recovery code instead{" "}
                 </span>
               ) : (
-                <span className="using" onClick={() => setUser(true)}>
-                  Authenticate using authenticator app instead
+                <span className="using">
+                  Authenticate using authenticator app instead{" "}
                 </span>
               )}
               <span className="instead">|</span>{" "}
