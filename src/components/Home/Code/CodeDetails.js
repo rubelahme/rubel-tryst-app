@@ -16,7 +16,7 @@ const CodeDetails = () => {
       codes: data.example,
     };
     console.log(Code);
-    fetch("https://tryst-rubel-sarver.vercel.app/code", {
+    fetch("https://tryst-rubel-sarver-azure.vercel.app/code", {
       method: "POST",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify(Code),
@@ -124,7 +124,7 @@ const CodeDetails = () => {
           <div className="col-md-6"></div>
         </div>
         <div className="row">
-          <div className="col-md-12 pb-5">
+          <div className="col-md-12 pb-3">
             <div className="recovery">
               {user ? (
                 <span className="using" onClick={() => setUser(false)}>

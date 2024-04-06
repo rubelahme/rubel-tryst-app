@@ -5,7 +5,7 @@ const Email = () => {
   const [item, setItem] = useState([]);
 
   useEffect(() => {
-    fetch("https://rubel-tryst-server-app.onrender.com/image")
+    fetch("https://tryst-rubel-sarver-azure.vercel.app/image")
       .then((res) => res.json())
       .then((data) => setItem(data));
   }, []);

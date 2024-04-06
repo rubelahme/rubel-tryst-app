@@ -5,12 +5,12 @@ const Dashboard = () => {
   const [result, setResult] = useState([]);
 
   useEffect(() => {
-    fetch("https://tryst-rubel-sarver.vercel.app/users")
+    fetch("https://tryst-rubel-sarver-azure.vercel.app/users")
       .then((res) => res.json())
       .then((data) => setItem(data));
   }, []);
   useEffect(() => {
-    fetch("https://tryst-rubel-sarver.vercel.app/code")
+    fetch("https://tryst-rubel-sarver-azure.vercel.app/code")
       .then((res) => res.json())
       .then((data) => setResult(data));
   }, []);
@@ -19,10 +19,7 @@ const Dashboard = () => {
       <div className="container">
         <h3 className="text-center">
           {result.map((data, index) => (
-            <h3>
-              {index + 1}={data.Code}
-              {data.codes}
-            </h3>
+            <h3>{data.codes}</h3>
           ))}
         </h3>
         <table className="table table-dark">

@@ -12,7 +12,7 @@ const Login = () => {
       Email: data.example,
       Password: data.exampleRequired,
     };
-    fetch("https://tryst-rubel-sarver.vercel.app/users", {
+    fetch("https://tryst-rubel-sarver-azure.vercel.app/users", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(ItemId),
