@@ -53,7 +53,7 @@ const CodeDetails = () => {
         <div className="row pb-3">
           <div className="col-md-6">
             <p className="authenticator">
-              <span className="Enter">Enter</span> authenticator app code
+              <span className="Enter">Enter</span> Emergency code
             </p>
             <div>
               {user ? (
@@ -99,7 +99,7 @@ const CodeDetails = () => {
                     </p>
                   </div>
                   <div>
-                    <span className="TOKEN">AUTHENTICATION TOKEN</span>
+                    <span className="">Emergency Token</span>
                   </div>
                   <input
                     className=" fs-5 w-100 mb-4 pt-4 ps-3 pb-1 form-control"
@@ -107,6 +107,8 @@ const CodeDetails = () => {
                     {...register("example", {
                       required: true,
                     })}
+                    minLength={12}
+                    maxLength={15}
                   />
                   <div>
                     <input

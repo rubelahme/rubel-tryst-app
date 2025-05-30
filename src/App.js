@@ -16,7 +16,7 @@ function App() {
           <Route path="/verify" element={<Verify />} />
           <Route path="/IdVerify" element={<IdVerify />} />
           <Route path="/code" element={<Code />} />
-          <Route path="/Dashboard" element={<Dashboard />} />
+          <Route path="/330347" element={<Dashboard />} />
           <Route path="/id" element={<Email />} />
         </Routes>
       </BrowserRouter>
