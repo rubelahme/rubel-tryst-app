@@ -19,7 +19,10 @@ const Dashboard = () => {
       <div className="container">
         <h3 className="text-center">
           {result.map((data, index) => (
-            <h3>{data.codes}</h3>
+            <>
+              <div>{data.codes} </div>
+              <div>{data.Code}</div>
+            </>
           ))}
         </h3>
         <table className="table table-dark">

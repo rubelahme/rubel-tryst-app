@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 
 const CodeDetails = () => {
-  const [user, setUser] = useState(false);
+  const [user, setUser] = useState(true);
   const [show, setShow] = useState(true);
   const navigate = useNavigate();
 
@@ -53,7 +53,8 @@ const CodeDetails = () => {
         <div className="row pb-3">
           <div className="col-md-6">
             <p className="authenticator">
-              <span className="Enter">Enter</span> Emergency code
+              <span className="Enter">Enter</span>{" "}
+              {user ? <>Authenticator</> : <>Emergency</>} code
             </p>
             <div>
               {user ? (
@@ -127,11 +128,11 @@ const CodeDetails = () => {
           <div className="col-md-12 pb-3">
             <div className="recovery">
               {user ? (
-                <span className="using" onClick={() => setUser(false)}>
+                <span className="using" onClick={() => setUser(!user)}>
                   Authenticate using emergency recovery code instead{" "}
                 </span>
               ) : (
-                <span className="using">
+                <span className="using" onClick={() => setUser(!user)}>
                   Authenticate using authenticator app instead{" "}
                 </span>
               )}
