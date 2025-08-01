@@ -175,7 +175,7 @@ const Verify = () => {
                 match your profile) <br />
                 2: The email address you signed up with <br />
                 3: Todays's date <br />
-                4: The phrase "I am singing up for Tryst.link"
+                4: The phrase "I am singing up for Privatedelights"
               </p>
               <input
                 accept="image/*"
